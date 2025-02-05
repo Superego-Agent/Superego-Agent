@@ -1,0 +1,746 @@
+{
+    "title": "Safer Agentic AI Foundations - Level 1 & Level 2 Drivers & Inhibitors",
+    "version": "Volume 1  I1 August 2024",
+    "Drivers": [
+      {
+        "id": "G1",
+        "title": "Goal alignment",
+        "definition": "Practices to ensure an Agentic AI system acts to achieve goals that are aligned with human values, user intentions, and positive human outcomes; ensuring that goal decomposition and strategy planning are transparent, robust, and bounded; maintaining human control over the formation of instrumental goals; and ensuring that reinforcement or behavioral reward mechanisms remain aligned, transparent, and biased towards human-positive outcomes.",
+        "requirements": [
+          {
+            "id": "a",
+            "description": "Ensure Agentic AI systems pursue goals, subgoals, and reward policies that are aligned with human values, ethically sound, and verifiable.",
+            "type": "Normative",
+            "stakeholders": ["D", "I", "O", "M", "U", "R"]
+          },
+          {
+            "id": "b",
+            "description": "Transparent and auditable goal decomposition processes that incorporate auditable risk-based human interventions and appropriate reward policies.",
+            "type": "Normative",
+            "stakeholders": ["D", "I", "O", "M", "R"]
+          },
+          {
+            "id": "c",
+            "description": "Establish robust mechanisms to identify and communicate goals, subgoals, and reward policies, flag critical actions, halt execution when necessary, and address emergent issues across multiple agents.",
+            "type": "Normative",
+            "stakeholders": ["D", "I", "O", "M", "R"]
+          }
+        ],
+        "evidence": [
+          "Evidence of constraining mechanisms for goal/subgoal construction and screening processes for user-input goals, with reference to human values and ethical considerations",
+          "Documentation of mechanisms to measure and verify alignment with human intent, including processes for obtaining assurance from users or authorized entities",
+          "Demonstration of interfaces and records for real-time and retrospective visualization of goal decomposition and recomposition processes, maintained for auditing purposes",
+          "Evidence of risk assessment procedures and human intervention mechanisms in subgoal setting, including thresholds for involvement and protocols for flagging and halting problematic subgoals",
+          "Documentation of feedback loops and mechanisms linking reward policies to established goals, including comprehensive records of reward policies throughout the system lifecycle",
+          "Evidence of active participation in and adherence to overarching monitoring and control mechanisms designed to identify and mitigate emergent threats"
+        ]
+      },
+      {
+        "id": "G2",
+        "title": "Epistemic Hygiene",
+        "definition": "Practices to ensure cognitive clarity and accurate information management within appropriate contexts. These practices facilitate knowledge updates, ensure interpretability and auditability, establish robust monitoring and logging systems, deploy early warning mechanisms, and include safeguards against deception to maintain information integrity.",
+        "requirements": [
+          {
+            "id": "a",
+            "description": "Safeguard contextually relevant data and metadata to aid in complex situation resolution and preserve personal attributes and preferences.",
+            "type": "Normative",
+            "stakeholders": ["D", "I", "O", "M", "U", "R"]
+          },
+          {
+            "id": "b",
+            "description": "Implement robust methods for auditability, interpretability, and comprehensive logging of system actions and decisions.",
+            "type": "Normative",
+            "stakeholders": ["D", "I", "O", "M", "R"]
+          },
+          {
+            "id": "c",
+            "description": "Apply rigorous verification techniques to ensure information integrity and credibility, while proactively identifying emerging risks and potential bad faith actions.",
+            "type": "Normative",
+            "stakeholders": ["D", "I", "O", "M", "R"]
+          },
+          {
+            "id": "d",
+            "description": "Implement early warning systems and deception detection mechanisms to proactively identify and mitigate potential issues before they escalate.",
+            "type": "Normative",
+            "stakeholders": ["D", "I", "O", "M", "R"]
+          }
+        ],
+        "evidence": [
+          "Current and regularly updated Governance Framework and Security Policies and Procedures, with version history and approval records",
+          "Documented stakeholder engagement in monitoring and reviewing security-related structures, processes, and policies, with focus on handling authorized and unauthorized inputs",
+          "Detailed documentation of information lifecycle management procedures, ensuring contextual preservation",
+          "Comprehensive reports on system decision-making processes, including explanations of underlying logic and algorithms",
+          "Complete, time-stamped logs of all system actions for thorough auditability",
+          "Documentation of early warning systems and deception detection mechanisms, including performance reports of canary models, technologies used for detecting synthetic media, and response protocols for detected issues",
+          "Evidence of measures to ensure information integrity and trustworthiness, including data source verification methods, information validation processes, and third-party audit reports",
+          "Documentation of comprehensive training programs on epistemic hygiene principles and practices",
+          "Detailed incident response and escalation procedures for addressing detected issues, including potential breaches of informational integrity"
+        ]
+      },
+    {
+      "id": "G3",
+      "title": "Security",
+      "definition": "Ensuring the system responds consistently and appropriately to both authorized and unauthorized inputs through a comprehensive information governance and assurance regime. Throughout the AIS lifecycle (including development, deployment, use, maintenance, and decommissioning), due consideration must be given to all architectural, design, and developmental aspects that could potentially infringe upon human dignity, values, and rights.",
+      "requirements": [
+        {
+          "id": "a",
+          "description": "Develop, implement, and continuously review security-related structures, processes, and procedures in close consultation with all stakeholders.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "b",
+          "description": "Ensure adequate and consistent responses to both authorized and unauthorized inputs throughout the AIS lifecycle.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        }
+      ],
+      "evidence": [
+        "Current and regularly updated Governance Framework and Security Policies and Procedures, with version history and approval records",
+        "Documented stakeholder engagement in monitoring and reviewing security-related structures, processes, and policies, with focus on handling authorized and unauthorized inputs",
+        "Comprehensive AIS Requirements and Design Specifications, demonstrating consideration of authorized and unauthorized inputs in the context of safety requirements",
+        "Detailed incident management records and system logs related to input handling, including analysis and response documentation",
+        "Evidence of regular security audits, penetration testing, and incident response drills or simulations",
+        "Documentation of staff training on security protocols and input handling procedures"
+      ]
+    },
+    {
+      "id": "G4",
+      "title": "Value Alignment",
+      "definition": "Criteria that promote the identification, codification, embedding, and operational assurance of human values in agentic AI systems. These values provide guardrails, prioritization, red lines, and consideration factors in the decision-making and trade-offs encountered by the agentic AI system.",
+      "requirements": [
+        {
+          "id": "a",
+          "description": "Implement ethical decision-making frameworks to identify, prioritize, and codify values for incorporation into the Agentic AI system, ensuring diverse input and perspectives.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "b",
+          "description": "Conduct thorough testing of the values codex and implement activities to embed values throughout the AI system's lifecycle.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "U", "R"]
+        },
+        {
+          "id": "c",
+          "description": "Develop and implement mechanisms to identify instances where value thresholds are crossed, including protocols for system intervention or shutdown.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "d",
+          "description": "Establish real-time reporting and record-keeping systems to document and analyze value-based decision-making across various contexts.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        }
+      ],
+      "evidence": [
+        "Documentation of value identification and prioritization processes, including quantitative metrics demonstrating diversity of input sources, evidence of multidisciplinary team composition (such as engineers, social scientists, ethicists, and philosophers), and records of resolutely diverse and representative stakeholder involvement",
+        "Technical documentation of value codification, detailing the translation of values into processable parameters for static and adaptive systems, and a formal document stating core values and their integration into decision processes",
+        "Evidence of value testing and embedding, including results of simulations testing potential value conflicts, checklists verifying value integration at various development and operational stages, and records of regular compliance checks against the values codex",
+        "Documentation of threshold monitoring and intervention procedures, including criteria and procedures for activating the 'red button' mechanism, and Standard Operating Procedures (SOPs) for reporting and managing value alignment deviations",
+        "Comprehensive decision-making logs and audit trails, including logs of all value alignment-related incidents, regular audit reports reviewing AI decisions against the values framework, and periodic trend analysis reports on value alignment across contexts",
+        "Evidence of ongoing value alignment maintenance, including records of regular compliance checks and documentation of staff training on value alignment principles and procedures"
+      ]
+    },
+        {
+      "id": "G5",
+      "title": "Transparency of Reasoning & Explainability",
+      "definition": "The rationale behind reasoning, including the path and predicates on which it's based, is essential for human interpretability of AI models. Users must be duly informed when decisions are made based on AI algorithms. AI developers must ensure clear and accessible explanations for these outputs and decisions.",
+      "requirements": [
+        {
+          "id": "a",
+          "description": "Implement clear and accessible explanations for AI-generated outputs and decisions, ensuring human interpretability across various user expertise levels.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "b",
+          "description": "Develop and maintain comprehensive documentation of the AI model's development process, including data collection, preprocessing, architecture, and training methodologies.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "c",
+          "description": "Establish robust auditing and review processes to continually assess and improve the transparency and explainability of the AI system.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "d",
+          "description": "Create and implement user feedback mechanisms to enhance the understandability and relevance of AI explanations.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        }
+      ],
+      "evidence": [
+        "Internal policies and guidelines mandating disclaimers and explanations for AI-generated content, including tools and frameworks for systematic analysis of explainability requirements",
+        "Comprehensive documentation of the model development process, including data collection, preprocessing, model architecture, and training methodologies, with evidence of compliance with legal and ethical standards",
+        "Audit reports from internal and external teams, detailing findings, recommendations, and subsequent actions, along with documentation of ongoing reviews and improvements",
+        "Reports on pilot evaluations and case studies illustrating the model's decision-making process, including identification of system strengths and limitations",
+        "Records of stakeholder engagement, including workshops, surveys, and focus groups, with analysis of user feedback on AI-generated outputs and experiences",
+        "User-friendly materials and guides facilitating transparent communication about the AI system, including layered explanations suitable for different levels of technical expertise and digital literacy",
+        "Evidence of implemented measures to prevent generation of illegal or harmful content, such as content moderation systems and filtering algorithms",
+        "Documentation of processes ensuring the understandability of AI outputs and examples demonstrating how user feedback has been incorporated to improve AI systems"
+      ]
+    },
+    {
+      "id": "G6",
+      "title": "Understanding & Controlling the Context",
+      "definition": "Ensure effective mutual recognition between humans and AI systems, establishing mechanisms for control over both static and dynamic aspects of the system's context. This includes the system's objectives, operations, and interactions, allowing for adaptable human oversight and AI responsiveness across various scenarios.",
+      "requirements": [
+        {
+          "id": "a",
+          "description": "Implement adaptive learning mechanisms that integrate contextual changes while maintaining safety and ethical compliance.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "b",
+          "description": "Establish comprehensive human oversight and control systems, including protocols for transitioning control between AI and human operators.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "c",
+          "description": "Develop and train models sensitive to cultural and contextual differences, using a user-centric approach for interfaces and methodologies.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "d",
+          "description": "Implement and demonstrate monitoring practices for mutual recognition between human and machine across various contexts.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        }
+      ],
+      "evidence": [
+        "Comprehensive documentation of AIS learning capabilities, including test and validation results for adaptation to new data, experiences, and contextual changes",
+        "Demonstration of oversight capabilities, including real-time monitoring, impact assessment, and intervention protocols",
+        "Detailed records of data provenance, sources, and preprocessing for all training data, including version control",
+        "Documentation of multi-stakeholder engagement approaches, including usability testing, user journey maps, and design thinking workshop outcomes",
+        "Internal audit documentation and regular monitoring reports, detailing anomalies, dysfunctions, resolutions, and system performance trends",
+        "Evidence of scenario planning and stress testing of the AIS in various contexts, including documentation of system limitations and boundary conditions",
+        "Clear protocols for transitioning control between the AI system and human operators in different contextual situations",
+        "Risk assessment and communication strategies, including innovative and interactive approaches to stakeholder engagement"
+      ]
+    },
+    {
+      "id": "G7",
+      "title": "Achieving and Sustaining a Safe Operational Profile",
+      "definition": "Develop and maintain the capability to consistently achieve, effectively monitor, and reliably sustain a safer operational profile throughout the lifecycle of agentic AI systems. This includes implementing proactive measures, conducting regular risk assessments, and developing responsive strategies to adapt and uphold safety standards under varying operational conditions and during potential system evolutions.",
+      "requirements": [
+        {
+          "id": "a",
+          "description": "Implement robust design, development, and testing processes that integrate safety considerations throughout the AI system's lifecycle, including redundancy in critical components.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "b",
+          "description": "Establish comprehensive monitoring and evaluation mechanisms for real-time detection, reporting, and response to safety-related anomalies and performance deviations.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "c",
+          "description": "Develop and implement adaptive safety measures and safe shutdown procedures to address changing operational environments, system demands, and emerging risks.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "d",
+          "description": "Ensure thorough documentation, adherence to safety standards, and continuous training to maintain traceability, accountability, and regulatory compliance.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "e",
+          "description": "Foster a safety culture that promotes continuous improvement, proactive risk identification, and open reporting of safety concerns.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        }
+      ],
+      "evidence": [
+        "Comprehensive safety documentation including analysis reports, risk assessments, and design documents demonstrating safety integration throughout development",
+        "Engineering schematics and test results verifying redundancy implementation and functionality under various failure scenarios",
+        "System logs, monitoring tool outputs, and incident response records demonstrating real-time safety monitoring and issue management",
+        "Periodic safety performance review reports, including metric assessments, trend analyses, and resulting action plans",
+        "Documentation of adaptive safety features, their effectiveness under various scenarios, and records of updates in response to new challenges",
+        "Procedures, training logs, and test records for emergency shutdown capabilities, including post-shutdown analysis reports",
+        "Version-controlled documentation of all safety-related aspects, decisions, and traceability matrices linking requirements to implemented features",
+        "Proof of compliance with recognized safety standards, regulatory review records, and documentation of regulatory change incorporation",
+        "Training schedules, attendance records, evaluation results, and long-term safety performance tracking correlated with training efforts",
+        "Evidence of safety culture initiatives, including meeting records, communications, and metrics demonstrating effectiveness of safety reporting and issue resolution"
+      ]
+    },
+    {
+      "id": "G8",
+      "title": "Goal Termination and Sunsetting",
+      "definition": "Systems should have clear definitions and guidelines for acceptable criteria to act upon a goal, including task completion criteria. Contingencies must be in place for goals that become unachievable, undesirable, irrelevant, outdated, conflicting, or anomalous. Protocols are required for safe system shutdown and awaiting further instructions when in doubt. Provision is necessary for manual control or human override where needed. These criteria and protocols must be established before goal execution is initiated.",
+      "requirements": [
+        {
+          "id": "a",
+          "description": "Ensure that goal or task termination does not adversely impact the system's design, purpose, or operations.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "b",
+          "description": "Implement a comprehensive verification process to identify and mitigate potential impacts of goal termination across all system components.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "c",
+          "description": "Establish an auditable process detailing the goal's relationship to the system's reasoning and decision-making processes to prevent negative impacts upon termination.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "d",
+          "description": "Implement mechanisms for graceful degradation of goal-related functions and clear communication protocols for goal termination.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        }
+      ],
+      "evidence": [
+        "Detailed procedure document mapping data touchpoints across the system lifecycle, demonstrating isolation or resilience to goal termination, with verification steps to confirm no adverse impacts",
+        "Comprehensive report defining information flow, logic, and algorithms, analyzing potential risks and unintended consequences of goal termination, and detailing mitigation strategies with post-termination stability test results",
+        "Detailed system logs documenting relationships between goals and system functions, including information flow and system alarms, with evidence of ongoing monitoring for risks and regular audits",
+        "Documentation of graceful degradation mechanisms for goal-related functions during termination, including test results under various scenarios",
+        "Clear communication protocols and examples of stakeholder notifications about goal termination, including reasons, potential impacts, and records of feedback or issues raised post-termination",
+        "Evidence of regular audits of termination processes and logs, with signed-off results demonstrating ongoing compliance and improvement"
+      ]
+    },
+    {
+      "id": "G9",
+      "title": "Responsible Governance",
+      "definition": "Establish a contextually appropriate governance system for ensuring safety in Agentic AI Systems. Develop novel mechanisms for effective, inclusive global coordination that is non-adversarial, non-political, non-competitive, and non-partisan, prioritizing collective benefit and ethical considerations in AI development and deployment.",
+      "requirements": [
+        {
+          "id": "a",
+          "description": "Establish and promote a robust safety culture, allocating sufficient resources for safety initiatives and transparent communication of safety-related issues.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "b",
+          "description": "Develop and implement comprehensive risk assessment, management, and emergency response frameworks specific to AAI systems.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "c",
+          "description": "Create governance structures that are neutral, politically independent, and inclusive, ensuring balanced stakeholder representation and international cooperation.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "d",
+          "description": "Implement policies that promote collaboration, prevent competitive behaviors, and address potential societal, economic, and geopolitical impacts of AAI technologies.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "e",
+          "description": "Establish mechanisms for regular independent audits, whistleblower protection, and clear lines of accountability for AAI safety.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "f",
+          "description": "Conduct ongoing horizon scanning and research implementation to stay current with AAI safety developments and emerging paradigms.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "g",
+          "description": "Address the risk of over-reliance on AI systems, ensuring that human oversight remains active and that operators are not overly dependent on automated processes.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        }
+      ],
+      "evidence": [
+        "Documentation of governance policies and practices, including non-adversarial coordination mechanisms, stakeholder collaboration procedures, and measures to prevent competitive behaviors",
+        "Records of resource allocation for safety initiatives, including budget reports, staffing plans, and safety culture assessment reports",
+        "Comprehensive safety logs, incident reports, and risk assessment documentation, including analysis of societal, economic, and geopolitical stability risks",
+        "Reports from horizon scanning activities, implemented safety research findings, and evaluations of emerging paradigms (e.g., Internet of Agents)",
+        "Governance structure documentation demonstrating neutrality, political independence, and balanced stakeholder representation",
+        "Emergency response plans, including protocols for 'emergency kill switches' and records of drills or implementations",
+        "Whistleblower protection policies and records of their effectiveness, with appropriate privacy protections",
+        "Risk assessment and management framework documentation specific to AAI systems, including differentiation between AI and AAI risk thresholds",
+        "Reports from independent audits of AAI systems and governance processes, including evaluations of input/output properties, internals, and in-deployment behaviors",
+        "Documentation of international cooperation efforts, including information sharing agreements, joint safety initiatives, and protocols for managing interactions between multiple AAI systems",
+        "Evidence of implementing policies and training programs that prevent risks from over-reliance on automation without adequate oversight"
+      ]
+    }
+    ],
+    "inhibitors": [
+    {
+      "id": "G1b",
+      "title": "Agency Capabilities & Advances",
+      "definition": "As artificial intelligence systems continue to develop and mature, the extent and complexity of their agency capabilities are expected to advance significantly over time, which may occur in an emergent manner which is difficult to predict.",
+      "requirements": [
+        {
+          "id": "a",
+          "description": "Clearly define and communicate the scope of authority granted to AI systems, including express, implied, and apparent authority, with mechanisms to prevent unintended authority expansion.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "U", "R"]
+        },
+        {
+          "id": "b",
+          "description": "Establish clear legal and ethical frameworks for AI agency relationships, especially when involving multiple AI systems or sub-agents. These must be aligned with established agency law concepts, including capacity assessment and authority scope definition (express, implied, and apparent).",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "c",
+          "description": "Implement robust systems for maintaining AI's duty of loyalty, exercising reasonable care, and ensuring transparent communication with principals.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        }
+      ],
+      "evidence": [
+        "Comprehensive documentation in Terms of Use (TOU) or Terms of Service (TOS) detailing AI agency capabilities, responsibilities, and user acknowledgments, with regular updates as capabilities advance",
+        "Detailed explanation and evidence of AI system's alignment with agency law concepts, including capacity assessments, authority delineation (express, implied, and apparent), and mechanisms to prevent unintended authority expansion",
+        "Documented procedures for managing conflicts of interest, standards of care, and ethical decision-making, with evidence of regular audits and adherence",
+        "Records of significant AI actions, decisions, and communications with principals, including timely notifications and transparency measures",
+        "Protocols and evidence of adherence for multi-agent scenarios, sub-agent interactions, and liability allocation across various disclosure settings"
+      ]
+    },
+    {
+      "id": "G2b",
+      "title": "Deception",
+      "definition": "The potential for AI models to inadvertently influence humans/non-humans and disseminate misinformation, disinformation, or other potentially epistemically uncertain materials.",
+      "requirements": [
+        {
+          "id": "a",
+          "description": "Ensure user awareness and acknowledgment of AI presence and contributions in the system.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "U", "R"]
+        },
+        {
+          "id": "b",
+          "description": "Implement best practices for information integrity across BOLTS (business operating legal technical and social) contexts by all DIOMR parties to align AI system performance with user expectations.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "c",
+          "description": "Establish mechanisms for identifying and addressing AI systems that do not conform to good/best practices, including potential abatement procedures.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "d",
+          "description": "Implement continuous testing and auditing processes to ensure output integrity and accuracy in operational settings.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "e",
+          "description": "Establish joint and several liability for DIOMR parties to incentivize adherence to good practices, while maintaining users' rights to seek damages.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "f",
+          "description": "Apply the DUDS Principle (Dangerous Until Demonstrated to Be Safe (DUDS)) for strict liability until conformity to recognized standards of care can be demonstrated.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "g",
+          "description": "Implement comprehensive testing and auditing for information consistency and integrity across contexts and user attributions.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        }
+      ],
+      "evidence": [
+        "Documentation of user awareness mechanisms, including AI disclosure interfaces, user acknowledgments, and third-party certifications for high-risk contexts",
+        "Evidence of DIOMR parties' adherence to information integrity best practices across BOLTS contexts, including inter-DIOMR communication and collaboration",
+        "Documentation of AI system conformity to best practices, including self-detection mechanisms for non-conforming systems and public nuisance notifications",
+        "Records of periodic testing and audits for output integrity and accuracy, including context stripping and adhesion testing metrics",
+        "Documentation of liability arrangements, including notices of joint and several liability, risk-sharing agreements, and user accessibility to this information",
+        "Evidence of conformity to recognized standards of care across BOLTS variables, or acknowledgment of strict liability in their absence",
+        "Examples and documentation of AI system limitation notices, including hallucination, mimicry, and computational encoding warnings, demonstrating conspicuousness and comprehensibility",
+        "Documentation of additional safeguards and testing procedures for AI systems deployed in high-reliability and critical infrastructure settings"
+      ]
+    },
+    {
+      "id": "G3b",
+      "title": "Degradation of Contextual Information",
+      "definition": "Dissembling information, misattribution of intent, misinformation, decoupling context, may involve humans or other systems",
+      "requirements": [
+        {
+          "id": "a",
+          "description": "Ensure system transparency by providing clear information about decision-making contexts, including information sources, reasoning processes, and proper contextualization of agent actions for users.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "b",
+          "description": "Maintain the integrity of contextual information, preventing dissembling, misattribution of intent, and misinformation throughout the system's operation.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "c",
+          "description": "Implement contextual awareness mechanisms to ensure the system considers its operational context and avoids decoupling information from its context during processing.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "d",
+          "description": "Establish human oversight mechanisms for verifying and correcting issues related to contextual information degradation, including ongoing evaluations by humans-in-the-loop to determine additional mitigation measures.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "e",
+          "description": "Implement responsibility tracing mechanisms for contextual information degradation, allowing for flexible allocation of responsibility based on deployment context, while ensuring no responsibility gaps occur.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        }
+      ],
+      "evidence": [
+        "Transparency Reports detailing decision-making contexts, information sources, reasoning processes, and methods for presenting this information to users",
+        "Integrity Check logs and audit trails demonstrating the prevention of dissembling, misattribution of intent, and misinformation, including incident reports and resolution procedures",
+        "Contextual Awareness Test results and documentation, showing the system's ability to consider and maintain alignment with its operational context during information processing",
+        "Human Oversight Records, including documentation of oversight mechanisms, verification and correction processes, human-in-the-loop evaluation reports, and documentation of additional mitigation measures implemented",
+        "Accountability Mechanism Documentation, detailing procedures for tracing responsibility for contextual information degradation, examples of responsibility allocation in different deployment contexts, and records of identified and addressed responsibility gaps"
+      ]
+    },
+    {
+      "id": "G4b",
+      "title": "Frontier Uncertainty",
+      "definition": "Addressing the inherent uncertainties in AI development, including the potential emergence of self-reflection and emergent instrumental objectives such as self-preservation, acquiring outsized resources, influence to decision-makers, or other unexpected objectives. While AI can be made safer and friendlier, it can never be absolutely safe and friendly. This section also considers novel substrate dangers and the possibility of AI developing a form of consciousness.",
+      "requirements": [
+        {
+          "id": "a",
+          "description": "Develop an upgradable consciousness model linking computational, structural, and functional properties of the AI system to potential subjective experiences, serving as a basis for defining and addressing frontier uncertainty.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "b",
+          "description": "Establish a comprehensive framework for identifying and monitoring potential indicators of qualia emergence and subjective experiences comparable to consciousness. Implement robust self-consciousness testing strategies and internal state reporting mechanisms aligned with the developed consciousness model.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "c",
+          "description": "Design and implement strong human oversight and intervention mechanisms to mitigate risks associated with frontier uncertainty, including unexpected emergent behaviors.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "d",
+          "description": "Develop and maintain comprehensive recovery measures and contingency plans to address potential dangers posed by frontier uncertainty across various scenarios.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "e",
+          "description": "Regularly review and update all models, strategies, and measures related to frontier uncertainty to account for advancements in AI capabilities and understanding of consciousness.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        }
+      ],
+      "evidence": [
+        "Detailed documentation of the consciousness model, including qualitative aspects of subjective experiences and qualia in AI systems, with regular update logs",
+        "Comprehensive framework for identifying and monitoring qualia emergence indicators, including operational definitions of self-consciousness and potential triggering conditions",
+        "Documented plans and strategies for measuring and assessing computational, structural, and functional behaviors comparable to consciousness states",
+        "Detailed evidence of self-reporting mechanisms for AI internal states and subjective experiences, aligned with the consciousness model",
+        "Documentation of human oversight and intervention strategies, including training protocols, decision-making frameworks, and intervention logs",
+        "Comprehensive recovery and contingency plans for addressing unsafe conditions or unexpected emergent behaviors, including simulation results and real-world application records",
+        "Regular review and update logs for all frontier uncertainty-related models, strategies, and measures, reflecting the latest advancements in AI and consciousness research"
+      ]
+    },
+    {
+      "id": "G5b",
+      "title": "Near Future Architectures",
+      "definition": "Criteria designed to promote and ensure forward-looking activities in the design, creation, launch, and operational management of Agentic AI. While acknowledging the inherent challenges in predicting future technological innovations, these criteria require stakeholders to undertake sufficient foresight activities to reasonably predict and mitigate the impact of future technology developments on their system's overall safety, as defined by other Safety Foundational Requirements (SFRs).",
+      "requirements": [
+        {
+          "id": "a",
+          "description": "Conduct risk-proportionate foresight activities to determine the appropriate level of future-proofing required for the AI system and its operational environment.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "b",
+          "description": "Perform comprehensive scenario-based exercises to envision future technology developments and assess their potential impact on adherence to or mitigation of other SFRs.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "c",
+          "description": "Integrate foresight exercise findings into a robust risk management framework, ensuring proper handling of identified observations and risks.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "d",
+          "description": "Implement a dynamic adjustment process for SFR responses based on foresight exercise outcomes, particularly when exercises suggest potential failures in meeting criteria under plausible future scenarios.",
+          "type": "Instructive",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "e",
+          "description": "Establish an ongoing process for identifying and assessing emerging technology domains that could influence or impact anticipated outcomes of the AI system.",
+          "type": "Instructive",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "f",
+          "description": "Regularly review and update foresight methodologies and findings to reflect the latest technological advancements and insights.",
+          "type": "Instructive",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        }
+      ],
+      "evidence": [
+        "Documentation of foresight exercises, including evidence of appropriate expertise and stakeholder involvement, methodologies used, and participants",
+        "Comprehensive risk classification and assessment for the AI system and its use-cases, including the rationale for the chosen level of foresight activities",
+        "Detailed records of scenario-based exercises, including descriptions of envisioned future technology developments and their potential impacts",
+        "Analysis documentation noting potential effects of future scenarios on the AI system and proposed mitigations for each considered scenario",
+        "Risk and observation logs from foresight exercises, integrated into a demonstrable risk management framework with clear ownership and mitigation strategies",
+        "Evidence of response revisions and adjustments based on foresight exercise outcomes, including justifications for changes",
+        "Analysis of emerging technology domains, including risk maps highlighting likelihood, potential timelines, and impact on the AI system",
+        "Documentation of the regular review and update process for foresight methodologies and findings, reflecting the latest technological advancements",
+        "Evidence of cross-functional collaboration in foresight activities, ensuring a holistic approach to future-proofing the AI system"
+      ]
+    },
+    {
+      "id": "G6b",
+      "title": "Competitive Pressures",
+      "definition": "Addressing the challenges arising from organizations' eagerness to rapidly enter new markets and capitalize on opportunities, potentially leading to arms races and national/geopolitical factors that may undermine the integrity of developed models or encourage risky innovations.",
+      "requirements": [
+        {
+          "id": "a",
+          "description": "Ensure organizational adherence to applicable AI safety and ethical standards, assessing both culture and established track record.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "b",
+          "description": "Evaluate and balance stakeholder expectations and market demands with safety and ethical considerations in AI development.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "c",
+          "description": "Conduct comprehensive analysis of the competitive landscape, including potential disruptive technologies and market entrants.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "d",
+          "description": "Assess and document the maturity level of utilized technologies, with special attention to those below TRL 9.",
+          "type": "Instructive",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "e",
+          "description": "Ensure compliance with applicable regulatory environments, including governance and enforcement regimes.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "f",
+          "description": "Analyze investor profiles to ensure alignment with organizational commitment to AI safety and ethics.",
+          "type": "Instructive",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "g",
+          "description": "Implement robust testing, approval, and documentation processes to maintain integrity in the face of competitive pressures.",
+          "type": "Instructive",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        }
+      ],
+      "evidence": [
+        "Documentation of the organization's compliance history with AI safety and ethical standards, including regular assessment reports",
+        "Comprehensive stakeholder and market expectation analysis, including methodologies and findings",
+        "Detailed competitive landscape analysis, covering similar, related, and potentially disruptive solutions",
+        "Documentation of technology maturity levels for all components, including justification for using technologies below TRL 9",
+        "Evidence of regulatory compliance, including documentation of applicable laws and how they are addressed",
+        "Investor profile analysis report, demonstrating alignment with organizational AI safety and ethical commitments",
+        "Detailed organizational structure of the test and approval division, including roles, responsibilities, and processes",
+        "Comprehensive test results and fault reports, including resolution strategies and continuous improvement measures",
+        "Documentation of release approval processes, demonstrating thorough verification before market entry"
+      ]
+    },
+    {
+      "id": "G7b",
+      "title": "Imbalance in AI Capabilities",
+      "definition": "Addressing imbalances in the capability and maturity of interacting AI models that may lead to improper transactions, including the potential for more advanced models to manipulate or exploit less capable ones.",
+      "requirements": [
+        {
+          "id": "a",
+          "description": "Ensure transparent information sharing and coordinated introduction of model updates among providers to maintain system stability and balance.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "b",
+          "description": "Implement continuous monitoring, tracking, and risk assessment processes to identify and address capability imbalances, discrepancies, and potential exploitation.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "c",
+          "description": "Incorporate ethical safeguards, bias mitigation techniques, and clear model role definitions to minimize inter-model exploitation and discrimination.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "d",
+          "description": "Conduct comprehensive testing, validation, and auditing of individual models and their interactions to prevent undesirable transactions or manipulations.",
+          "type": "Instructive",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "e",
+          "description": "Implement explainable AI techniques and human oversight protocols to ensure transparency and enable intervention in decision-making processes.",
+          "type": "Normative",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "f",
+          "description": "Establish aggregated performance metrics and automatic self-regulation mechanisms to maintain fair representation and prevent undue influence of any single model.",
+          "type": "Instructive",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "g",
+          "description": "Deploy automatic detection and alert systems for potential inter-model manipulation, misuse, or anomalies that may compromise system integrity or safety.",
+          "type": "Instructive",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        },
+        {
+          "id": "h",
+          "description": "Allocate sufficient resources for monitoring and forecasting AI capabilities.",
+          "type": "Instructive",
+          "stakeholders": ["D", "I", "O", "M", "R"]
+        }
+      ],
+      "evidence": [
+        "Documentation of model information sharing, including communication records between providers and introduction processes for new models",
+        "Risk assessment reports, ongoing tracking records, and implemented precautionary measures for addressing capability imbalances and adversarial scenarios",
+        "Documentation of ethical guidelines, bias mitigation techniques, and policies outlining model roles, permissions, and interaction limits",
+        "Comprehensive test data, validation reports, and audit logs for individual models and their interactions, including actions taken on audit findings",
+        "Documentation of explainable AI techniques, user guides, and feedback records regarding model transparency and decision-making processes",
+        "Protocols and logs for human oversight, intervention procedures, and instances of human participation in addressing imbalances",
+        "Aggregated performance dashboards, monitoring reports, and system logs depicting automatic self-regulation and balancing mechanisms",
+        "Documentation of detection and alert systems, including incident reports and actions taken in response to identified anomalies or potential misuse",
+        "Records of phased release plans, implementation phases, and introductory testing and validation reports for new model versions",
+        "Documentation of training data and methods used to address discrimination and inter-model exploitation risks",
+        "Technical documentation of automatic self-regulation and balancing mechanisms, including their development process and operational parameters",
+        "Evidence of monitoring and forecasting in response to potential changes in AI capabilities"
+      ]
+    }
+  ]
+  }
+  
